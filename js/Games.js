@@ -1,38 +1,4 @@
 const abagame = window.document.getElementsByTagName("a")[0]
-
-function Resolution()
-{
-    if(screen.width === 1920)
-    {
-        document.body.style.backgroundColor = "#f3f3f3";
-        document.body.style.backgroundImage = "url('img/1920.1080.png')";
-    }
-    if(screen.width === 1280)
-    {
-        document.body.style.backgroundColor = "#f3f3f3";
-        document.body.style.backgroundImage = "url('img/1280.768.png')";
-    }
-    if(screen.width === 1366)
-    {
-        document.body.style.backgroundColor = "#f3f3f3";
-        document.body.style.backgroundImage = "url('img/1366.768.png')";
-    }
-    if(screen.width === 1024)
-    {
-        document.body.style.backgroundColor = "#f3f3f3";
-        document.body.style.backgroundImage = "url('img/1024.768.png')";
-    }
-    if(screen.width === 800)
-    {
-        document.body.style.backgroundColor = "#f3f3f3";
-        document.body.style.backgroundImage = "url('img/800.600.png')";
-    }
-    if(screen.width === 600)
-    {
-        document.body.style.backgroundColor = "#f3f3f3";
-        document.body.style.backgroundImage = "url('img/600.400.png')";
-    }
-}
 const mainGame = window.document.querySelector(".games")
 function Clique()
 {
