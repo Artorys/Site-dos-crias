@@ -97,5 +97,4 @@ function Games()
 }
 Games()
 Clique()
-Resolution()
 Carrosel()
