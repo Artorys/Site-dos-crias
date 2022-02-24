@@ -22,7 +22,7 @@ body
 {
     background-repeat: no-repeat;
     background-size: auto;
-    background-position: center;
+    background-position-x: center;
     background-image: url(1914.1080.png);
 }
 header
