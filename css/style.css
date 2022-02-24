@@ -21,7 +21,8 @@
 body
 {
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
+    background-position: center;
     background-image: url(1914.1080.png);
 }
 header
