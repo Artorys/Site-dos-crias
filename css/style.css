@@ -18,13 +18,13 @@
     padding: 0;
     margin: 0;
 }
-body
-{
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position-x: center;
-    background-image: url(1914.1080.png);
-}
+body {
+    margin: 0;
+    font-family: 'Prompt', sans-serif;
+    color: white;
+    background: #202731;
+    overflow-x: hidden;
+  }
 header
 {
     user-select: none;
