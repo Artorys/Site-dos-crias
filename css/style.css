@@ -169,7 +169,7 @@ a:nth-of-type(1):hover
 }
 .slider
 {
-    width: 800px;
+    width: 250px;
     height: 500px;
     border-radius: 20px;
     overflow: hidden;
@@ -177,9 +177,12 @@ a:nth-of-type(1):hover
 }
 .slides
 {
+    object-fit: contain;
     width: 500%;
-    height: 500px;
+    height: 300px;
     display: flex;
+    flex-direction: row;
+
 }
 .slides input
 {
@@ -189,6 +192,7 @@ a:nth-of-type(1):hover
 {
     width: 20%;
     transition: 2s;
+    object-fit: cover;
 }
 .slide img
 {
@@ -197,9 +201,9 @@ a:nth-of-type(1):hover
 /*css for manual slide navigator*/
 .navigator-manual
 {
-    position: absolute;
-    width: 790px;
-    margin-top: -95px;
+    position: relative;
+    width: 100%;
+    margin-right: 7px;
     display: flex;
     justify-content: center;
 
@@ -270,7 +274,9 @@ a:nth-of-type(1):hover
     position: relative;
     width: 380px;
     border-radius: 15px;
-    padding: 25px 30px;
+    margin-top: 4rem;
+    height: auto;
+    padding: 10px 20px;
     background-color: var(--white);
     box-shadow: 0px 6px 15px var(--lightbshadow);
 }
@@ -297,16 +303,18 @@ a:nth-of-type(1):hover
 }
 .img-area
 {
+    margin-left: 1.8rem;
     overflow: hidden;
-    height: 256px;
-    width: 100%;
-    background: red;
+    height: 200px;
+    width:80%;
+    display: flex;
     margin-top: 25px;
     border-radius: 15px;
     box-shadow: 0px 6px 12px var(--lightbshadow);
 }
 .img-area img
 {
+    justify-content: center;
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -521,10 +529,6 @@ ul .playing
     {
         width: 70px;
         height: 60px;
-    }
-    .slider
-    {
-        width: 300px;
     }
 }
 @media(max-width : 800px )
