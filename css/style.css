@@ -262,6 +262,7 @@ a:nth-of-type(1):hover
 
 .section-music
 {
+    font-size: calc(1vw + 1px);
     margin-left: 8rem;
     display: none;
     align-items: center;
@@ -303,10 +304,9 @@ a:nth-of-type(1):hover
 }
 .img-area
 {
-    margin-left: 1.8rem;
     overflow: hidden;
     height: 200px;
-    width:80%;
+    width:100%;
     display: flex;
     margin-top: 25px;
     border-radius: 15px;
@@ -328,13 +328,13 @@ a:nth-of-type(1):hover
 }
 .song-details .name
 {
-    font-size: 21px;
+    font-size:  calc(1vw + 0.8rem);
     margin-bottom:15px ;
 }
 .song-details .artist
 {
     opacity: 0.9;
-    font-size: 18px;
+    font-size:calc(1vw + 0.5rem);
 }
 .progress-area
 {
@@ -530,10 +530,23 @@ ul .playing
         width: 70px;
         height: 60px;
     }
+        .img-area
+    {
+        overflow: hidden;
+        height: 200px;
+        width:100%;
+        display: flex;
+        margin-top: 25px;
+        border-radius: 15px;
+        box-shadow: 0px 6px 12px var(--lightbshadow);
+    }
 }
 @media(max-width : 800px )
 {
-   
+   .wrapper
+   {
+
+   }
 }
 @media(max-width : 1024px)
 {
