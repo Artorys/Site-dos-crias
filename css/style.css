@@ -64,7 +64,7 @@ header
 {
     float: left;
     position: fixed;
-    width: 230px;
+    width: 15%;
     height: 100%;
     margin-top: 100px;
     padding-top: 2px;
@@ -80,7 +80,7 @@ header
 }
 .sidebar .image
 {
-    width: 100px;
+    width: 5%px;
     height: 100px;
     border-radius: 100px;
 }
