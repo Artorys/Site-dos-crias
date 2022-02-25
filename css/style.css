@@ -80,8 +80,9 @@ header
 }
 .sidebar .image
 {
-    width: 5%px;
-    height: 100px;
+    margin-top: 1rem;
+    width: 60%;
+    height: 100%;
     border-radius: 100px;
 }
 .sidebar h2
