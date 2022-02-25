@@ -268,7 +268,7 @@ a:nth-of-type(1):hover
 {
     overflow: hidden;
     position: relative;
-    width: 380px;
+    width: 50%;
     border-radius: 15px;
     padding: 25px 30px;
     background-color: var(--white);
