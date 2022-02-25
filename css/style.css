@@ -323,13 +323,13 @@ a:nth-of-type(1):hover
 {
     text-align: center;
     margin: 10px 0;
-    margin: 30px 0;
+    margin: 20px 0;
     color: var(--lightblack);
 }
 .song-details .name
 {
     font-size:  calc(1vw + 0.8rem);
-    margin-bottom:15px ;
+    margin-bottom:6px ;
 }
 .song-details .artist
 {
