@@ -62,13 +62,13 @@ header
 }
 .sidebar
 {
-    float: left;
     position: fixed;
-    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width: 230px;
     height: 100%;
     margin-top: 100px;
-    padding-top: 2px;
-    padding-right:120px ;
     left: 0;
     background-image:url(300x600.png);
     background-size: cover;
@@ -80,31 +80,35 @@ header
 }
 .sidebar .image
 {
-    margin-top: 1rem;
-    width: 60%;
-    height: 100%;
-    border-radius: 100px;
-}
-.sidebar h2
-{
-    color: #ccc;
-    margin-top: 0;
-    margin-bottom: 20px;
+    margin-top: 3rem;
+    width: 100px;
+    height: 120px;
 }
 .sidebar a
 {
+    justify-content:center;
+    align-items: center;
+    font-size: calc(10px + 1vw);
+    position: relative;
     text-decoration: none;
     color: #fff;
-    display: block;
     width: 100%;
-    line-height: 120px;
-    padding-left: 20px;
+    line-height:30px;
     box-sizing: border-box;
     transition: 0.5s;
 }
+a:nth-of-type(1):hover
+{
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+.sidebar a :not(:last-child)
+{
+    margin-top: 4.5rem;
+}
 .sidebar a:hover
 {
-    background-color: rgb(30, 35, 35);
+    background: var(--lightblack);
 }
 .content
 {
@@ -131,6 +135,7 @@ header
 /* main games comeca aqui*/
 .games
 {
+
     user-select: none;
     display: flex;
     height: 100vh;
@@ -187,7 +192,7 @@ header
 }
 .slide img
 {
-    width: 800px;
+    width: 100%;
 }
 /*css for manual slide navigator*/
 .navigator-manual
@@ -253,6 +258,7 @@ header
 
 .section-music
 {
+    margin-left: 8rem;
     display: none;
     align-items: center;
     justify-content: center;
@@ -505,4 +511,63 @@ ul .playing
 {
     color : var(--violet);
     pointer-events: none;
+}
+@media(max-width : 600px){
+    .sidebar
+    {
+        width: 150px;
+    }
+    .sidebar .image
+    {
+        width: 70px;
+        height: 60px;
+    }
+    .wrapper
+    {
+        width: 100%;
+        height: 100%;
+        margin-top: 5rem;
+        margin-right: 3rem;
+    }
+    .slider
+    {
+        width: 300px;
+    }
+}
+@media(max-width : 800px )
+{
+    .wrapper
+    {
+        width: 250px;
+        height: 100%;
+        margin-top: 5rem;
+        margin-left: 2rem;
+    }
+}
+@media(max-width : 1024px)
+{
+    .wrapper
+    {
+        width: 350px;
+        height: 100%;
+        margin-top: 6rem;
+        margin-left: 5rem;
+    }
+}
+@media(max-width : 1280px)
+{
+    .wrapper
+    {
+        width: 350px;
+        height: 100%;
+        margin-top: 8rem;
+        margin-left: 5rem;
+    }
+}
+@media(max-width : 1366px)
+{
+    .wrapper
+    {
+        margin-top: 10rem;
+    }
 }
