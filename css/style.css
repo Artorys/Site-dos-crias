@@ -23,6 +23,10 @@ body {
     font-family: 'Prompt', sans-serif;
     color: white;
     background: #202731;
+    background-image: url(1914.1080.png);
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size:auto;
     overflow-x: hidden;
   }
 header
@@ -72,7 +76,6 @@ header
     left: 0;
     background-image:url(300x600.png);
     background-size: cover;
-    border-top-right-radius:120px;
     transition: 0.5s;
     transition-property:left ;
     
@@ -83,6 +86,8 @@ header
     margin-top: 3rem;
     width: 100px;
     height: 120px;
+    border-radius: 70px;
+    outline: auto var(--lightblack);
 }
 .sidebar a
 {
@@ -442,6 +447,10 @@ a:nth-of-type(1):hover
     -webkit-background-clip: text;
     -webkit-text-fill-color:transparent
 }
+#more-music
+{
+    
+}
 .music-list
 {
     position: absolute;
@@ -466,27 +475,26 @@ a:nth-of-type(1):hover
 {
     display: flex;
     align-items: center;
-    font-size: 19px;
+    font-size: calc(1vw + 1rem);
     color: var(--lightblack);
 }
 .header .row i
 {
-    font-size: calc(1vw + 0.7rem);
+    font-size: calc(1vw + 1rem);
     cursor: default;
 }
 .header .row span
 {
-    font-size: calc(1vw + 0.7rem);
+    font-size: calc(1vw + 1rem);
     margin-left: 5px;
 }
 .header #close
 {
-    font-size: calc(1vw + 0.7rem);
+    font-size: calc(1vw + 1rem);
     color: var(--lightblack) ;
 }
 .music-list ul
 {
-    font-size: calc(1vw + 0.7rem);
     margin: 20px 0;
     max-height: 260px;
     overflow-y: auto;
@@ -507,10 +515,6 @@ a:nth-of-type(1):hover
 .music-list ul li:last-child
 {
     border-bottom:0px
-}
-.music-list ul li .row span
-{
-    font-size: 17px;
 }
 ul li .row p
 {
@@ -565,6 +569,44 @@ ul .playing
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.slider
+{
+    margin-left: 6rem;
+    margin-top: 12rem;
+    width: 150px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    padding-top: 3.5rem;
+}
+.navigator-manual
+{
+    position: relative;
+    width: 100%;
+    margin-right: 7px;
+    display: flex;
+    justify-content: center;
+
+}
+.manual-btn
+{
+    width: 10px;
+    height:10px;
+    border: 2px solid #01BED0;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.slides
+{
+    object-fit: contain;
+    width: 500%;
+    height: 180px;
+    display: flex;
+    flex-direction: row;
+
 }
 }
 @media(max-width : 800px )

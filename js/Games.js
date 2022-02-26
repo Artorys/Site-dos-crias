@@ -19,14 +19,12 @@ function Clique()
             span1.style.display = "none"
             span2.style.display = "none"
             span3.style.display = "none"
-            span4.style.display = "none"
         }
         else
         {
             span1.style.display = "inline"
             span2.style.display = "inline"
             span3.style.display = "inline"
-            span4.style.display = "inline"
             sidebar.style.left = "0px"
         }
 
