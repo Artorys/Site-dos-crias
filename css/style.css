@@ -87,7 +87,7 @@ header
     width: 100px;
     height: 120px;
     border-radius: 70px;
-    outline: auto var(--lightblack);
+    border:solid var(--lightblack);
 }
 .sidebar a
 {
