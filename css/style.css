@@ -28,6 +28,7 @@ body {
     background-repeat: no-repeat;
     background-size:auto;
     overflow-x: hidden;
+    overflow-y: auto;
   }
 header
 {
